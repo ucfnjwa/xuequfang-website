@@ -1,0 +1,239 @@
+body{
+	height: 0;
+	font-family: Palatino Linotype;
+
+	background-attachment:fixed;
+	padding: 0;
+	margin: 0;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+  .nav-tabs li a {
+      color: #777;
+  }
+ 
+  .navbar {
+	font-family: Palatino Linotype;
+      background-color: rgba(89,75,70, 0.7);
+      border: 0;
+      font-size: 20px !important;
+      letter-spacing: 1px;      
+	  height: 60px;
+
+
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+	  line-height: 30px ! important;
+  }
+  .navbar-nav li a:hover {
+      color: #D87A68 !important;
+  }
+  .navbar-nav li.active a {
+      color: #D87A68 !important;
+      background-color: #29292c !important;
+	  	  height: 60px !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #D87A68;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+
+/*scrollbar background*/
+::-webkit-scrollbar  {
+    width: 12px;
+    height: 16px;
+}
+/*scrollbar slide area*/
+::-webkit-scrollbar-track  {
+
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+/*scrollbar slider*/
+::-webkit-scrollbar-thumb  {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+	opacity: 0.5;
+
+}
+
+
+
+.us-title {
+    margin-top:10%;
+	text-align: center;
+	font-size: 40px;
+	color: #f3d4d5;
+
+}
+.us-title a:hover{
+	text-decoration: none;
+	color: #da7d81;
+}
+.a-red{
+	color: #da7d81;
+	font-weight: bold;
+}
+
+.us-intro {
+	font-size: 26px;
+	color: #fff;
+	text-align: justify;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.download-area {
+	background-color: #1c1f1f;
+	height: auto;
+	width: 100%;
+}
+
+.download-back {
+	background-color: transparent;
+	color: white;
+}
+.download-back img {
+	max-width: 350px;
+	max-height: 100px;
+    margin-left: 30%;
+}
+.download-content{
+	color: white;
+    margin-left: 5%;
+	font-size: 18px;
+}
+
+
+
+
+
+
+.thumbnail{
+  background-color: transparent;
+  border: 0;   
+	cursor: pointer;
+	transition: all 0.4s ease-out;
+	color: white;  
+	margin-top: 5%;
+}
+
+  .thumbnail img {
+      max-width: 350px;
+      max-height: 350px;	  
+	z-index: 0;
+	transition: all 0.4s ease-out;
+  }
+
+
+.text {
+    position: relative;
+   padding: 0 50px 0 50px;	
+	text-align: left;
+	}
+
+.thumbnail h2 {
+font-size: 26px;
+text-align: center;
+	}
+.thumbnail h3 {
+	font-weight: bold;
+	margin-top: 20px;
+	font-size: 20px;
+	transform: translateX(30px);
+	}
+.thumbnail p {
+	font-weight: 300;
+	margin-top: 20px;
+	line-height: 25px;
+	transform: translateX(-30px);
+	transition-delay: 0.2s;
+	}
+.animate-text {
+	opacity: 0;
+	transition: all 0.6s ease-in-out;
+	}
+.thumbnail:hover {
+
+	transform: scale(1.05);
+	}
+
+.thumbnail:hover .animate-text {
+	transform: translateX(0);
+	opacity: 1;
+	}
+
+
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  
+  footer {
+      background-color: rgba(89,75,70, 0.7);
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+
